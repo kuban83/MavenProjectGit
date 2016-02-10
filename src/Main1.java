@@ -11,10 +11,6 @@ import java.util.Scanner;
 public class Main1 {
 
     public static void main(String[] args) {
-        Cat barsik = new Cat("Barsik", "black", 3, 5, true);
-        Cat murka = new Cat("Murka", "white", 2, 4, false);
-        Cat tom = new Cat("Tom", "red", 4, 5, true);
-
 
         System.out.println("Введите вес 1-го противника: ");
         Scanner sc = new Scanner(System.in);
@@ -32,7 +28,6 @@ public class Main1 {
         Cat warrior2 = new Cat("Warrior2", "smoky", 6, y, w);
 
         System.out.print("1-й противник весит " + warrior1.getWeight() + "кг и это");
-
         if (!warrior1.isSex())
             System.out.println(" девочка.");
         else
@@ -46,9 +41,7 @@ public class Main1 {
             System.out.println(" мальчик. ");
 
 
-        barsik.voice();
-
-        System.out.println("Winner: " + warrior1.fight(warrior2).getName());
+           System.out.println("Winner: " + warrior1.fight(warrior2).getName());
 
     }
 }
