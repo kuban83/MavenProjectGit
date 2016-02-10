@@ -1,3 +1,4 @@
+package androsova_ann.homework.lesson2;
 
 import java.util.Random;
 
@@ -71,9 +72,8 @@ public class Cat {
         return new Cat("noname", "white", 0, 0, rn.nextBoolean());
 
         return null;
-// реализовать метод файт, проверить что мальчики дрались с мальчиками, победил тот кот, у которого вес больше
-         //String name, String color, int age, int weight, boolean sex
     }
+
     public Cat fight(Cat enemy){
       if(this.isSex() == enemy.isSex()){
         if (this.getWeight() < enemy.getWeight()){
@@ -85,7 +85,6 @@ public class Cat {
         if (this.getWeight() == enemy.getWeight()){
             return new Cat("Equal warriors",null, 0, 0, false);
         }
-
         }
        return new Cat("❤❤❤ Make love not war ❤❤❤",null, 0, 0, false);
     }
